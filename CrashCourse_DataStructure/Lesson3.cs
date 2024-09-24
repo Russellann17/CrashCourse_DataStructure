@@ -12,11 +12,11 @@ namespace CrashCourse_DataStructure
             while (true)
             {
                 
-                Console.WriteLine("\"SHOPPING LIST MANAGER\"" +
-                    "\n[1] Add Item" +
-                    "\n[2] Remove Item" +
-                    "\n[3] Search Item" +
-                    "\n[4] Exit ");
+                Console.WriteLine("--- SHOPPING LIST MANAGER ---" +
+                                  "\n[1] Add Item" +
+                                  "\n[2] Remove Item" +
+                                  "\n[3] Search Item" +
+                                  "\n[4] Exit ");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
                 switch (choice)
