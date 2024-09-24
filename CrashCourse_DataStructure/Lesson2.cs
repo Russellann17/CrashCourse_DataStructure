@@ -10,17 +10,12 @@ namespace CrashCourse_DataStructure
 
             r1.introduceSelf();
             r2.introduceSelf();
-            r1.lokkingAt = r2;
-            r2.lokkingAt = r1;
 
             Person p1 = new Person("Alice", "aggressive", false);
             Person p2 = new Person("Becky", "talkative", true);
 
-            p1.robotOwned = r2;
-            p2.robotOwned = r1;
-
-            p1.robotOwned.introduceSelf();
-            p2.robotOwned.introduceSelf();
+            p1.IntroduceMe();
+            p2.IntroduceMe();
         }
       
     }
@@ -29,7 +24,6 @@ namespace CrashCourse_DataStructure
         public string name { get; set; }
         public string color { get; set; }
         public int weight { get; set; }
-        public Robot lokkingAt { get; set; }
 
         public Robot(string name, string color, int weight)
         {
@@ -39,7 +33,7 @@ namespace CrashCourse_DataStructure
         }
         public void introduceSelf()
         {
-            Console.WriteLine("Hi! My name is " + this.name);
+            Console.WriteLine("Hi! I am a robot and my name is " + this.name);
         }
     }
 
@@ -59,12 +53,27 @@ namespace CrashCourse_DataStructure
 
         public void sitDown()
         {
+            Console.Write("I am sitting.");
             this.isSitting = true;
         }
         
         public void standUp()
         {
+            Console.WriteLine("I am standing.");
             this.isSitting = false;
+        }
+
+        public void IntroduceMe()
+        {
+            Console.WriteLine("Hi, my name is " + this.name);
+            if (isSitting)
+            {
+                Console.WriteLine("I am currently sitting.");
+            }
+            else
+            {
+                Console.WriteLine("I am currently standing.");
+            }
         }
     }
 }
