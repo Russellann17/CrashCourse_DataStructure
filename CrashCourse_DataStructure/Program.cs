@@ -10,34 +10,38 @@ namespace CrashCourse_DataStructure
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("[1] Lesson 2 : Classes and Objects" +
-                              "[2] Lesson 3 : Linked List" +
-                              "[0] Exit");
+            Console.WriteLine("------- DATA STRUCTURES LESSON -------" +
+                              "\n[1] Lesson 2 : Classes and Objects" +
+                              "\n[2] Lesson 3 : Linked List" +
+                              "\n[3] Lesson 4 : Stack and Queue" +
+                              "\n[0] Exit");
 
             while (true)
             {
                 Console.Write("Choose a Lesson: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
-                switch (choice)
+                if (choice == 1)
                 {
-                    case 1:
-                        Lesson2.L2_ClassesAndObjects();
-                        Console.WriteLine("\n");
-                        break;
-                    case 2:
-                        Lesson3.L3_LinkedList();
-                        Console.WriteLine("\n");
-                        break;
-                    case 3:
-
-                    case 0:
-                        return;
+                    Lesson2.L2_ClassesAndObjects();
+                    Console.WriteLine("\n");
                 }
+                else if (choice == 2)
+                {
+                    Lesson3.L3_LinkedList();
+                    Console.WriteLine("\n");
+                }
+                else if(choice == 3)
+                {
+                    Lesson4.L4_StackAndQueue();
+                    Console.WriteLine("\n");
+                }
+                else if (choice == 0) return;
+            }
                 
                 
             }
         }
     }
 
-}
+
