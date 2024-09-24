@@ -11,6 +11,7 @@ namespace CrashCourse_DataStructure
         static void Main(string[] args)
         {
             Lesson2.L2_ClassesAndObjects();
+            Lesson3.L3_LinkedList();
         }
     }
 
