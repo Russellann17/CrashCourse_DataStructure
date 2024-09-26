@@ -16,6 +16,7 @@ namespace CrashCourse_DataStructure
                               "\n[3] Lesson 4 : Stack and Queue" +
                               "\n[4] Lesson 5 : Trees" +
                               "\n[5] Lesson 6 : Graphs" +
+                              "\n[6] Lesson 7 : Hashing" +
                               "\n[0] Exit");
 
             while (true)
