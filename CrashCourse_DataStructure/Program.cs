@@ -14,6 +14,7 @@ namespace CrashCourse_DataStructure
                               "\n[1] Lesson 2 : Classes and Objects" +
                               "\n[2] Lesson 3 : Linked List" +
                               "\n[3] Lesson 4 : Stack and Queue" +
+                              "\n[4] Lesson 5 : Trees" +
                               "\n[0] Exit");
 
             while (true)
@@ -34,6 +35,11 @@ namespace CrashCourse_DataStructure
                 else if(choice == 3)
                 {
                     Lesson4.L4_StackAndQueue();
+                    Console.WriteLine("\n");
+                }
+                else if(choice == 4)
+                {
+                    Lesson5.L5_Trees();
                     Console.WriteLine("\n");
                 }
                 else if (choice == 0) return;
