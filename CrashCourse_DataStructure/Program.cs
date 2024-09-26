@@ -49,6 +49,11 @@ namespace CrashCourse_DataStructure
                     Lesson6.L6_Graph();
                     Console.WriteLine("\n");
                 }
+                else if(choice == 6)
+                {
+                    Lesson7.L7_Hashing();
+                    Console.WriteLine("\n");
+                }
                 else if (choice == 0) return;
             }
                 
