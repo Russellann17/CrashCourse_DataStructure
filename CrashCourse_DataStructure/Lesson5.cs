@@ -29,9 +29,17 @@ namespace CrashCourse_DataStructure
 
             Console.WriteLine("\nBinary Tree In-Order Traversal:");
             binaryTree.InOrderTraversal(binaryTree.Root);
+            Console.WriteLine("\nBinary Tree Pre-Order Traversal:");
+            binaryTree.PreOrderTraversal(binaryTree.Root);
+            Console.WriteLine("\nBinary Tree Post-Order Traversal:");
+            binaryTree.PostOrderTraversal(binaryTree.Root);
 
             Console.WriteLine("\n\nBinary Search Tree In-Order Traversal:");
             bst.InOrderTraversal(bst.Root);
+            Console.WriteLine("\nBinary Search Tree Pre-Order Traversal:");
+            bst.PreOrderTraversal(bst.Root);
+            Console.WriteLine("\nBinary Search Tree Post-Order Traversal:");
+            bst.PostOrderTraversal(bst.Root);
         }
     }
 
@@ -84,6 +92,26 @@ namespace CrashCourse_DataStructure
                 InOrderTraversal(node.Left);
                 Console.Write(node.value + " ");
                 InOrderTraversal(node.Right);
+            }
+        }
+
+        public void PreOrderTraversal(Node node)
+        {
+            if (node != null)
+            {
+                Console.Write(node.value + " ");
+                PreOrderTraversal(node.Left);
+                PreOrderTraversal(node.Right);
+            }
+        }
+
+        public void PostOrderTraversal(Node node)
+        {
+            if (node != null)
+            {
+                PostOrderTraversal(node.Left);
+                PostOrderTraversal(node.Right);
+                Console.Write(node.value + " ");
             }
         }
     }
