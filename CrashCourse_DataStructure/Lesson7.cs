@@ -14,7 +14,7 @@ namespace CrashCourse_DataStructure
 
             while (true)
             {
-                Console.WriteLine("---- CONTACT MANAGER ----" +
+                Console.WriteLine("\n---- CONTACT MANAGER ----" +
                                   "\n[1] Add Contact" +
                                   "\n[2] Search Contact" +
                                   "\n[3] Delete Contact" +
