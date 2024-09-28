@@ -17,6 +17,8 @@ namespace CrashCourse_DataStructure
                               "\n[4] Lesson 5 : Trees" +
                               "\n[5] Lesson 6 : Graphs" +
                               "\n[6] Lesson 7 : Hashing" +
+                              "\n[7] Lesson 8 : Heaps" +
+                              "\n[8] Lesson 9 : " +
                               "\n[0] Exit");
 
             while (true)
@@ -53,6 +55,15 @@ namespace CrashCourse_DataStructure
                 {
                     Lesson7.L7_Hashing();
                     Console.WriteLine("\n");
+                }
+                else if(choice == 7)
+                {
+                    Lesson8.L8_Heaps();
+                    Console.WriteLine("\n");
+                }
+                else if(choice == 8)
+                {
+
                 }
                 else if (choice == 0) return;
             }
