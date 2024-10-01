@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lesson1.cs" />
     <Compile Include="Lesson10.cs" />
+    <Compile Include="Lesson11.cs" />
     <Compile Include="Lesson2.cs" />
     <Compile Include="Lesson3.cs" />
     <Compile Include="Lesson4.cs" />

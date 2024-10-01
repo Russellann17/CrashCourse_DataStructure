@@ -21,6 +21,7 @@ namespace CrashCourse_DataStructure
                               "\n[8]  Lesson 8  : Heaps" +
                               "\n[9]  Lesson 9  : Sorting Algorithms" +
                               "\n[10] Lesson 10 : Searching Algorithms" +
+                              "\n[11] Lesson 11 : Greedy Algorithms" +
                               "\n[0] Exit");
 
             while (true)
@@ -31,6 +32,8 @@ namespace CrashCourse_DataStructure
                 switch (choice)
                 {
                     case 1:
+                        Lesson1.L1_Introduction();
+                        Console.WriteLine("\n");
                         break;
                     case 2:
                         Lesson2.L2_ClassesAndObjects();
@@ -66,6 +69,10 @@ namespace CrashCourse_DataStructure
                         break;
                     case 10:
                         Lesson10.L10_SearchingAlgorithm();
+                        Console.WriteLine("\n");
+                        break;
+                    case 11:
+                        Lesson11.L11_GreedyAlgorithm();
                         Console.WriteLine("\n");
                         break;
                     case 0:
