@@ -11,14 +11,15 @@ namespace CrashCourse_DataStructure
         static void Main(string[] args)
         {
             Console.WriteLine("------- DATA STRUCTURES LESSON -------" +
-                              "\n[1] Lesson 2 : Classes and Objects" +
-                              "\n[2] Lesson 3 : Linked List" +
-                              "\n[3] Lesson 4 : Stack and Queue" +
-                              "\n[4] Lesson 5 : Trees" +
-                              "\n[5] Lesson 6 : Graphs" +
-                              "\n[6] Lesson 7 : Hashing" +
-                              "\n[7] Lesson 8 : Heaps" +
-                              "\n[8] Lesson 9 : " +
+                              "\n[1] Lesson 1 : Introduction" +
+                              "\n[2] Lesson 2 : Classes and Objects" +
+                              "\n[3] Lesson 3 : Linked List" +
+                              "\n[4] Lesson 4 : Stack and Queue" +
+                              "\n[5] Lesson 5 : Trees" +
+                              "\n[6] Lesson 6 : Graphs" +
+                              "\n[7] Lesson 7 : Hashing" +
+                              "\n[8] Lesson 8 : Heaps" +
+                              "\n[9] Lesson 9 : Sorting Algorithms" +
                               "\n[0] Exit");
 
             while (true)
@@ -26,51 +27,52 @@ namespace CrashCourse_DataStructure
                 Console.Write("Choose a Lesson: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
-                if (choice == 1)
+                switch (choice)
                 {
-                    Lesson2.L2_ClassesAndObjects();
-                    Console.WriteLine("\n");
-                }
-                else if (choice == 2)
-                {
-                    Lesson3.L3_LinkedList();
-                    Console.WriteLine("\n");
-                }
-                else if(choice == 3)
-                {
-                    Lesson4.L4_StackAndQueue();
-                    Console.WriteLine("\n");
-                }
-                else if(choice == 4)
-                {
-                    Lesson5.L5_Trees();
-                    Console.WriteLine("\n");
-                }
-                else if(choice == 5)
-                {
-                    Lesson6.L6_Graph();
-                    Console.WriteLine("\n");
-                }
-                else if(choice == 6)
-                {
-                    Lesson7.L7_Hashing();
-                    Console.WriteLine("\n");
-                }
-                else if(choice == 7)
-                {
-                    Lesson8.L8_Heaps();
-                    Console.WriteLine("\n");
-                }
-                else if(choice == 8)
-                {
+                    case 1:
+                        break;
+                    case 2:
+                        Lesson2.L2_ClassesAndObjects();
+                        Console.WriteLine("\n");
+                        break;
+                    case 3:
+                        Lesson3.L3_LinkedList();
+                        Console.WriteLine("\n");
+                        break;
+                    case 4:
+                        Lesson4.L4_StackAndQueue();
+                        Console.WriteLine("\n");
+                        break;
+                    case 5:
+                        Lesson5.L5_Trees();
+                        Console.WriteLine("\n");
+                        break;
+                    case 6:
+                        Lesson6.L6_Graph();
+                        Console.WriteLine("\n");
+                        break;
+                    case 7:
+                        Lesson7.L7_Hashing();
+                        Console.WriteLine("\n");
+                        break;
+                    case 8:
+                        Lesson8.L8_Heaps();
+                        Console.WriteLine("\n");
+                        break;
+                    case 9:
+                        Lesson9.L9_SortingAlgorithm();
+                        Console.WriteLine("\n");
+                        break;
+                    case 0:
+                        return;
+
+
 
                 }
-                else if (choice == 0) return;
             }
-                
-                
-            }
+
         }
     }
+}
 
 
