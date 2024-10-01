@@ -11,15 +11,16 @@ namespace CrashCourse_DataStructure
         static void Main(string[] args)
         {
             Console.WriteLine("------- DATA STRUCTURES LESSON -------" +
-                              "\n[1] Lesson 1 : Introduction" +
-                              "\n[2] Lesson 2 : Classes and Objects" +
-                              "\n[3] Lesson 3 : Linked List" +
-                              "\n[4] Lesson 4 : Stack and Queue" +
-                              "\n[5] Lesson 5 : Trees" +
-                              "\n[6] Lesson 6 : Graphs" +
-                              "\n[7] Lesson 7 : Hashing" +
-                              "\n[8] Lesson 8 : Heaps" +
-                              "\n[9] Lesson 9 : Sorting Algorithms" +
+                              "\n[1]  Lesson 1  : Introduction" +
+                              "\n[2]  Lesson 2  : Classes and Objects" +
+                              "\n[3]  Lesson 3  : Linked List" +
+                              "\n[4]  Lesson 4  : Stack and Queue" +
+                              "\n[5]  Lesson 5  : Trees" +
+                              "\n[6]  Lesson 6  : Graphs" +
+                              "\n[7]  Lesson 7  : Hashing" +
+                              "\n[8]  Lesson 8  : Heaps" +
+                              "\n[9]  Lesson 9  : Sorting Algorithms" +
+                              "\n[10] Lesson 10 : Searching Algorithms" +
                               "\n[0] Exit");
 
             while (true)
@@ -63,11 +64,15 @@ namespace CrashCourse_DataStructure
                         Lesson9.L9_SortingAlgorithm();
                         Console.WriteLine("\n");
                         break;
+                    case 10:
+                        Lesson10.L10_SearchingAlgorithm();
+                        Console.WriteLine("\n");
+                        break;
                     case 0:
                         return;
-
-
-
+                    default:
+                        Console.WriteLine("Invalid Input.");
+                        break;
                 }
             }
 
