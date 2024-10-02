@@ -22,6 +22,9 @@ namespace CrashCourse_DataStructure
                               "\n[9]  Lesson 9  : Sorting Algorithms" +
                               "\n[10] Lesson 10 : Searching Algorithms" +
                               "\n[11] Lesson 11 : Greedy Algorithms" +
+                              "\n[12] Lesson 12 : Divide and Conquer" +
+                              "\n[13] Lesson 13 : Backtracking" +
+                              "\n[14] Lesson 14 : Space and Time Complexity Analysis" +
                               "\n[0] Exit");
 
             while (true)
@@ -73,6 +76,18 @@ namespace CrashCourse_DataStructure
                         break;
                     case 11:
                         Lesson11.L11_GreedyAlgorithm();
+                        Console.WriteLine("\n");
+                        break;
+                    case 12:
+                        Lesson12.L12_DivideAndConquer();
+                        Console.WriteLine("\n");
+                        break;
+                    case 13:
+                        Lesson13.L13_Backtracking();
+                        Console.WriteLine("\n");
+                        break;
+                    case 14:
+                        Lesson14.L14_SpaceAndTimeAnalysis();
                         Console.WriteLine("\n");
                         break;
                     case 0:
